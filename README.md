@@ -1,7 +1,6 @@
-# Salah Prayer Times 1
+# Display Waktu Shalat
 
-A cleaner and more standarized version of:
-http://praytimes.org/code/git/?a=tree&p=PrayTimes&hb=HEAD&f=v1/php
+demo: http://iqbalmind.net/pt
 
 # How to use
 
@@ -22,11 +21,11 @@ require dirname(__FILE__) . DS . 'core' . DS . 'Prayer_Times.php';
 Then intialize a location/setting object:
 
 ```
-$settings               = new Settings('US');
-$settings->location     = array('Detroit', 'Michigan', 'US');
-$settings->latitude     = 42.4056;
-$settings->longitude    = -83.0531;
-$settings->timezone     = 'America/Detroit';
+$settings               = new Settings('ID');
+$settings->location     = array('Bandung', 'West Java', 'ID');
+$settings->latitude     = -6.898319;
+$settings->longitude    = 107.619542;
+$settings->timezone     = 'Asia/Jakarta';
 ```
 
 This will automatically assign the method/madhab based on the country (US). Not not all countries have defaults so you can do the following additional sets:
@@ -71,4 +70,4 @@ echo 'Isha: '       . format_am_pm($times[5]) . PHP_EOL;
  15) Russia Custom
  
 # Need help or have any question?
-Contact us at amanaestates@gmail.com. You can also visit us at SalahHour.com
+Contact us at iqbalmind76@gmail.com. You can also visit https://iqbalmind.net/masjidvers
