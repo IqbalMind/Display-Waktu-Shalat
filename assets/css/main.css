@@ -1,0 +1,180 @@
+/* 
+*Created by Muhamad Iqbal Nurmanditya
+*https://iqbalmind.net
+*YT: Iqbalmind
+*IG: @Iqbalmind
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    /* margin-left: 0px;
+    margin-right: 5px; */
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.clocktime{
+    display: block;
+}
+#demo{
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.subtime{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -1rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    background-color: #2275d7;
+    opacity: 0.6;
+    padding: 0.5rem 0rem;
+    border-radius: 0.4rem;
+}
+.cdtitle{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.panel{
+    color: #fff;
+    background-color: #4a90e2;
+    background-image: url(../svg/arabesque-bg.svg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.panel-isi{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex: 1 1 auto;
+}
+
+.separator{
+    display: block;
+    margin: 1rem auto;
+}
+
+.top{
+    flex: 1 1 auto;
+}
+
+.sub{
+    opacity: 0.6;
+}
+
+.title{
+    font-size: 1.8rem;
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 1;
+    margin: 0.4rem 0px;
+}
+
+.panel-jadwal{
+    color: #fff;
+    margin-top: 1rem;
+    position: relative;
+    text-shadow: 0px 0px 0px;
+    background-color: #fff;
+}
+
+.panel-jadwal::before{
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url(../svg/arabesque-line.svg);
+    background-size: 1rem 1rem;
+    width: 100%;
+    height: 1rem;
+    top: -0.6rem;
+    left: 0px;
+    background-position: center top;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.box-jadwal{
+    background-color: #f6f6f6;
+    color: #4a90e2;
+    width: calc(33% - 1rem);
+    text-align: center;
+    padding: 1rem 1rem 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.box-waktunya{
+    background-color: #4a90e2;
+    color: #f6f6f6;
+    width: calc(33% - 1rem);
+    text-align: center;
+    padding: 1rem 1rem 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.title-jadwal{
+    /* text-transform: uppercase; */
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.waktu-jadwal{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.waktu-iqomah{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 400px) {
+  .title-jadwal{
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.waktu-jadwal{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.waktu-iqomah{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+}
