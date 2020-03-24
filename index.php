@@ -163,17 +163,13 @@ function format_am_pm($el) { return str_replace(array('%am%', '%pm%'), array('AM
             // Display the result in the element with id="demo"
             document.getElementById("demo").innerHTML = hours + ":"
                 + minutes + ":" + seconds;
-                document.getElementById("s1").innerHTML = "jam";
-                document.getElementById("s2").innerHTML = "menit";
-                document.getElementById("s3").innerHTML = "detik";
+            
 
             // If the count down is finished, write some text
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "Saatnya Shalat";
-                document.getElementById("s1").innerHTML = "";
-                document.getElementById("s2").innerHTML = "";
-                document.getElementById("s3").innerHTML = "";
+               
             }
         }, 1000);
     </script>
